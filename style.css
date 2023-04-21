@@ -17,6 +17,9 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .name {
@@ -25,9 +28,9 @@ header {
 
 .nav-box {
     display: flex;
-    align-items: center;
     list-style-type: none;
     padding-right: 20px;
+    padding-top: 5px;
     font-weight: 400;
 }
 
@@ -50,7 +53,7 @@ section {
 
 .first-section {
     position: relative;
-    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8))
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8));
     height: 100vh;
     min-height: 80rem;
     max-height: 120rem;
@@ -85,12 +88,12 @@ p {
     margin-inline-end: 0px;
 }
 
-.about-button {
+.contact-button {
     margin-top: 5rem;
     text-align: center;
 }
 
-.about-button-interior {
+.contact-button-interior {
     padding: 0.8rem 4rem;
     font-size: 2rem;
     background: #2DC526;
@@ -102,4 +105,84 @@ p {
     border-radius: 8px;
     box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
     transition: transform .3s;
+}
+
+.secondary-heading-about {
+    display: flex;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 11rem;
+    max-width: 60rem;
+    line-height: 1.7;
+}
+
+.secondary-heading-skills {
+    display: flex;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 11rem;
+    max-width: 60rem;
+    line-height: 1.7;
+    padding-left: 6rem;
+}
+
+.secondary-heading-text {
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 1px;
+    max-width: 60rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-left: 6rem;
+}
+
+.skills__skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    background: rgba(255, 67, 4, 0.829);
+    border-radius: 8px;
+    font-weight: 600;
+    color: black;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    padding: 0.5rem;
+}
+
+.home-hero__social-icon-link {
+    display: flex;
+    width: 100%;
+    display: block;
+    transition: background .3s;
+    border-radius: 5px;
+}
+
+.home-hero__social-icon {
+    width: 100%;
 }
