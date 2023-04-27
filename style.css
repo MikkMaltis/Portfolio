@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Source+Sans+Pro:wght@300;400;600;700&family=Ysabeau:wght@300;400;500;600;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ section {
     position: relative;
     background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8));
     height: 100vh;
-    min-height: 80rem;
+    min-height: 60rem;
     max-height: 120rem;
     position: relative;
 }
@@ -104,7 +104,6 @@ p {
     font-weight: 700;
     border-radius: 8px;
     box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
-    transition: transform .3s;
 }
 
 .secondary-heading-about {
@@ -127,9 +126,9 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-top: 11rem;
-    max-width: 60rem;
     line-height: 1.7;
-    padding-left: 6rem;
+    scroll-behavior: smooth;
+    justify-content: center;
 }
 
 .secondary-heading-text {
@@ -164,25 +163,111 @@ p {
     flex-wrap: wrap;
     padding-left: 5rem;
     padding-top: 2rem;
+    scroll-behavior: smooth;
 }
 
-.socials {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #fff;
-    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
-    padding: 0.5rem;
+.project-container {
+    padding-left: 6rem;
 }
 
-.home-hero__social-icon-link {
-    display: flex;
-    width: 100%;
+.first-project {
+    width: 40%;
+    height: 40%;
+}
+
+.second-project {
+    width: 40%;
+    height: 40%;
+}
+
+.third-project {
+    width: 40%;
+    height: 40%;
+}
+
+.fourth-project {
+    width: 40%;
+    height: 40%;
+}
+
+.second-section {
+    position: relative;
+    min-height: 60rem;
+    max-height: 120rem;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.beautiful-text {
+    font-size: xx-large;
+    font-family: 'Vina Sans';
+}
+
+.third-section {
+    height: 100vh;
+    position: relative;
     display: block;
-    transition: background .3s;
-    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+
 }
 
-.home-hero__social-icon {
-    width: 100%;
+.contact {
+    padding-top: 11rem;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.contacts-box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+
+.slack-name {
+    padding-top: 1em;
+}
+
+.discord-name {
+    padding-top: 1em;
+}
+
+.messenger-name {
+    padding-top: 1em;
+}
+
+footer {
+    background: #000;
+    padding: 40px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.main-footer__upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.main-footer__social-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.social {
+    padding-left: 10px;
 }
