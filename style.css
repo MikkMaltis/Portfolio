@@ -22,8 +22,35 @@ header {
     z-index: 2;
 }
 
+.btn {
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+    box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, .2);
+    width: 155px;
+    height: 50px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    margin: 0 10px 40px;
+    color: #fff;
+    font-weight: bold;
+    flex: 0 0 auto;
+}
+
+.btn-4 {
+    background: #81fa08;
+    transition: all 0.16s ease-in;
+}
+
+.btn-4:hover {
+    background: none;
+    color: #464646;
+    box-shadow: 0 0 0 1px rgba(80, 80, 80, .5);
+}
+
 .name {
     padding-left: 20px;
+    padding-top: 5px;
 }
 
 .nav-box {
@@ -104,6 +131,32 @@ p {
     font-weight: 700;
     border-radius: 8px;
     box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+}
+
+.contact-button-interior:hover {
+    color: black;
+}
+
+.contact-button-interior::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #145211;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+
+.contact-button-interior:hover::before {
+    transform: scaleX(1);
 }
 
 .secondary-heading-about {
@@ -219,6 +272,7 @@ p {
     font-size: 2.5em;
     font-weight: 700;
     line-height: 1.7;
+    scroll-behavior: smooth;
 }
 
 .contacts-box {
@@ -248,6 +302,7 @@ footer {
     justify-content: space-between;
     color: #fff;
     text-transform: uppercase;
+    padding-left: 20px;
 }
 
 .main-container {
@@ -259,15 +314,24 @@ footer {
 .main-footer__upper {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
 }
 
 .main-footer__social-cont {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .social {
-    padding-left: 10px;
+    padding-left: 12px;
+}
+
+.main-footer_lower {
+    padding: 4rem 0;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: left;
+    text-align: center;
+    font-family: 'Vina Sans';
+    display: flex;
 }
